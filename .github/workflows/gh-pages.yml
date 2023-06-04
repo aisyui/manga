@@ -9,10 +9,10 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
       with:
-        node-version: 14
+        node-version: 16
         ref: main
         submodules: true
         fetch-depth: 0
@@ -29,3 +29,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
+        user_name: 'ai[bot]'
+        user_email: '138105980+yui-syui-ai[bot]@users.noreply.github.com'
