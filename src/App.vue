@@ -100,7 +100,7 @@ import axios from 'axios'
 import moment from "moment";
 import fs from 'fs';
 
-var page = 6;
+var page = 21;
 var loc = window.location.pathname.split('/').slice(-1)[0];
 var loc_dir = window.location.pathname.split('/')[1];
 //let loc = window.location.pathname.split('/').slice(0)[3];
@@ -138,7 +138,7 @@ export default {
 					url: "/",
 					start: 0,
 					end: 21,
-					dir: "wa/1",
+					dir: "wa/0",
 					s_a: 0,
 					s_b: 2,
 					s_c: 41,
